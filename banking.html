@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+
+    <!-- Tailwine css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl text-center mt-16">Let's see <span class="font-semibold text-purple-600">Bank Details</span></h1>
+    </header>
+
+    <main class="w3/4 mx-auto">
+        <section class="mt-8 pl-20 pr-20 pb-8 pt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <!-- Diposit -->
+                <div class="bg-amber-600 rounded p-8">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h3 class="text-2xl">$<span id="deposit-total" >00</span></h3>
+                </div>
+
+                <!-- Withdraw -->
+                <div class="bg-red-600 rounded p-8">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h3 class="text-2xl">$<span id="withdraw-total">00</span></h3>
+                </div>
+                <!-- Balance -->
+                <div class="bg-emerald-800 rounded p-8">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h3 class="text-2xl">$<span id="balance-total">100</span></h3>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Deposit and Withdraw -->
+        <section class="w-3/4 mx-auto mt-1">
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Deposit -->
+                <div class="bg-fuchsia-300 rounded p-10">
+                    <h3 class="text-2xl pb-3">Please Deposit</h3>
+                    <div action="" class="">
+                        <input id="deposit-input" class="block border border-gray-400 rounded w-3/4 mb-4 px-2 py-2" type="text"
+                            placeholder="$ amotun you want to deposit?">
+                        <button id="deposit-btn" class="bg-neutral-900 rounded text-white px-10 py-3 font-medium">Diposit</button>
+                    </div>
+                </div>
+
+                <!-- Withdraw -->
+                <div class="bg-violet-500 rounded p-10">
+                    <h3 class="text-2xl pb-3">Please Withdraw</h3>
+                    <div action="" class="">
+                        <input id="withdraw-input" class="block border border-gray-400 rounded w-3/4 mb-4 px-2 py-2" type="text"
+                            placeholder="$ amotun you want to Withdraw?">
+                        <button id="withdraw-btn" class="bg-neutral-900 rounded text-white px-10 py-3 font-medium">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/funcational.js"></script>
+</body>
+</html>
